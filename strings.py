@@ -98,7 +98,7 @@ text
 #This only works with two literals though, 
 #not with variables or expressions:
 prefix = 'Did'
-prefix 'Coding'
+# prefix 'Coding' gives you an error
 prefix + 'Coding'
 
 #Indexing
@@ -106,8 +106,8 @@ prefix + 'Coding'
  +---+---+---+---+---+---+---+---+---+
  | D | i | d | C | o | d | i | n | g |
  +---+---+---+---+---+---+---+---+---+
- 0   1   2   3   4   5   6   7   8   
--9  -8  -7  -6  -5  -4  -3  -2  -1
+   0   1   2   3   4   5   6   7   8   
+  -9  -8  -7  -6  -5  -4  -3  -2  -1
 '''
 
 word = 'Didcoding'
@@ -134,7 +134,7 @@ len(s)
 
 #Handy built-in functions
 '''
-When you don’t need fancy output but just want a quick display 
+When you don't need fancy output but just want a quick display 
 of some variables for debugging purposes, you can convert any 
 value to a string with the repr() or str() functions.
 
